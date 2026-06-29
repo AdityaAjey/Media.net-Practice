@@ -1,0 +1,148 @@
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Day1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ touch README.md
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ ls
+Day1.txt  README.md
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ ll
+total 16
+drwxrwxr-x  3 darth_coder darth_coder 4096 Jun 29 15:42 ./
+drwxr-xr-x 21 darth_coder darth_coder 4096 Jun 28 15:45 ../
+-rw-rw-r--  1 darth_coder darth_coder 2889 Jun 28 15:49 Day1.txt
+drwxrwxr-x  7 darth_coder darth_coder 4096 Jun 29 15:42 .git/
+-rw-rw-r--  1 darth_coder darth_coder    0 Jun 29 15:42 README.md
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Day1.txt
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git add .
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Day1.txt
+        new file:   README.md
+
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git commit -m "Initial Commit"
+[master (root-commit) 52c8df9] Initial Commit
+ 2 files changed, 50 insertions(+)
+ create mode 100644 Day1.txt
+ create mode 100644 README.md
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git log
+commit 52c8df90138e35da15e6aec0afd096a544435bde (HEAD -> master)
+Author: Aditya Ajey <22B0986@iitb.ac.in>
+Date:   Mon Jun 29 15:44:19 2026 +0530
+
+    Initial Commit
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git diff
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ cat "git practice" > README.md 
+cat: 'git practice': No such file or directory
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ echo "git practice" > README.md 
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git diff
+diff --git a/README.md b/README.md
+index e69de29..eac8b8a 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1 @@
++git practice
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git commit -m "Initial Commit"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git add .
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git commit -m "Initial Commit"
+[master 35d37f4] Initial Commit
+ 1 file changed, 1 insertion(+)
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git log
+commit 35d37f4c394c0e0d78d80003df602d6b6bef5a7e (HEAD -> master)
+Author: Aditya Ajey <22B0986@iitb.ac.in>
+Date:   Mon Jun 29 15:47:05 2026 +0530
+
+    Initial Commit
+
+commit 52c8df90138e35da15e6aec0afd096a544435bde
+Author: Aditya Ajey <22B0986@iitb.ac.in>
+Date:   Mon Jun 29 15:44:19 2026 +0530
+
+    Initial Commit
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git remote add
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git remote add origin https://github.com/Adi
+tyaAjey/Media.net-Practice.git
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git branch -M main
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git push -u origin main
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/AdityaAjey/Media.net-Practice.git/'
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git remote add origin https://github.com/AdityaAjey/Media.net-Practice.git
+error: remote origin already exists.
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git branch -M main
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git branch
+* main
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git status
+On branch main
+nothing to commit, working tree clean
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git branch -a
+* main
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git push -u origin main
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/AdityaAjey/Media.net-Practice.git/'
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.22 KiB | 1.22 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AdityaAjey/Media.net-Practice.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
