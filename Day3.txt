@@ -48,4 +48,8 @@ Changes not staged for commit:
 	modified:   Day3.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git merge practice
+Merge made by the 'ort' strategy.
+ Day4.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Day4.txt
