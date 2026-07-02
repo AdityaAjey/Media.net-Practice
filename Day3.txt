@@ -12,3 +12,40 @@ Switched to branch 'practice'
 darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git status
 On branch practice
 nothing to commit, working tree clean
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git log --oneline
+54a9abb (HEAD -> main) created Day3.txt
+4a7b193 (origin/main) added .gitignore
+f291d60 Created Day2.txt on github and will do git pull in local machine to get it there
+35d37f4 Initial Commit
+52c8df9 Initial Commit
+git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Day3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git stash
+Saved working directory and index state WIP on main: 54a9abb created Day3.txt
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ git stash apply stash@{0}
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Day3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
