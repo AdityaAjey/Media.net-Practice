@@ -1,0 +1,12 @@
+darth_coder@Aditya-Ajey-HP-255-G8-Notebook-PC:~/Documents/media.net$ ./run_tests.sh 
+Compiling prac.cpp...
+PASS 01_basic
+PASS 02_single_element
+PASS 03_empty_array
+PASS 04_unsorted
+PASS 05_duplicates
+PASS 06_negative_numbers
+PASS 07_reverse_sorted
+PASS 08_two_elements
+
+Results: 8 passed, 0 failed
